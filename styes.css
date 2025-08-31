@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 ,h4, h5, input, fieldset, legend, div, span, footer, a, aside, ul, li, textarea{
+    box-sizing: border-box;
+}
+
+body {
+    --sb-color: #0c343d;
+    --side-bar: #145;
+    --bg-color: #a2c4c9;
+    --text-color: #fff;
+    --dark-text-color: #222;
+    --dest-bg-color: #ccc;
+    --shadows-color: #2229;
+    background-color: var(--bg-color);
+    background: 0 0% 100%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    min-height: 100dvh;
+}
+
+/* ------------ Sidebar Lateral Zone ------------ */
+
+.sidebar__lateral {
+    background-color: var(--sb-color);
+    width: fit-content;
+    min-height: 100dvh;
+    position: fixed;
+    box-shadow: 0 0 50px 0 var(--shadows-color);
+}
+
+.Tetos__logo1 {
+    width: 200px;
+    margin: 50px;
+}
+
+.list__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar__item {
+    list-style: none;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.sidebar__link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: large;
+    margin-left: 40px;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 20px 40px;
+}
+
+.sidebar__item:hover {
+    background-color: var(--bg-color);
+    border-radius: 36px 0 0 36px;
+}
+
+/* ------------ Sidebar Lateral Zone Ends ------------ */
+
+
+/* ------------ Main Zone ------------ */
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.user_options {
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+
+.perfil {
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--side-bar);
+    margin: 20px 30px;
+    border-radius: 36px;
+    border: 2px solid var(--sb-color);
+    box-shadow: 0 0 30px 0 var(--shadows-color);
+}
+
+.Notifications {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 20px 40px;
+}
+
+.Notifications_container {
+    position: absolute;
+    right: 0;
+    margin: 13px 60px;
+}
+
+p {
+    color: var(--dark-text-color);
+}
+
+.barra_de_busqueda {
+    position: absolute;
+    width: clamp(400px, 70vw, 1000px);
+    left: 24%;
+    margin-top: 50px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 36px;
+    border: 1px solid var(--sb-color);
+    outline: none;
+    box-shadow: 0 0 10px 0 var(--shadows-color);
+}
+
+.barra_de_busqueda:hover {
+    border: 1px solid var(--sb-color);
+    outline: none;
+}
+
+fieldset {
+    border: 2px solid var(--dark-text-color);
+    color: var(--dark-text-color);
+    background-image: url(img/WhatsApp\ Image\ 2025-08-27\ at\ 7.55.08\ PM.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: clamp(400px, 70vw, 1000px);
+    max-height: 76.6vh;
+    min-height: 76.6vh;
+    position: absolute;
+    left: 24%;
+    top: 15%;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 0 30px 0 var(--shadows-color);
+}
+
+legend {
+    color: var(--dark-text-color);
+    background-color: var(--bg-color);
+    margin: 15px;
+    margin-bottom: 10px;
+    padding: 0 5px 0 5px;
+    border-radius: 36px;
+    border: 2px solid var(--dark-text-color);
+    box-shadow: 0 0 30px 0 var(--shadows-color);
+}
+
+.destacados {
+    display: flex;
+    margin-left: 20px;
+    background-color: var(--dest-bg-color);
+    width: clamp(200px, 63vw, 955px);
+    height: 70vh;
+    border: 2px solid var(--dark-text-color);
+    overflow-x: hidden;
+    box-shadow: 0 0 50px 0 var(--shadows-color);
+    position: relative;
+}
+
+.new-comment {
+    position: relative;
+}
+
+.new-comment input, textarea {
+    width: 63%;
+    padding: 10px;
+    background: var(--bg-color);
+    color: var(--dark-text-color);
+    border: 2px solid var(--dark-text-color);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px 0 var(--shadows-color);
+    outline: none;
+}
+
+.new-comment textarea {
+    max-width: 63%;
+    min-width: 63%;
+    min-height: 100px;
+    max-height: 300px;
+    scrollbar-color: var(--bg-color) var(--bg-color);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+.Coment-bars {
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    position: absolute;
+    left: 15vw;
+}
+
+.bars-title {
+    margin: 5px;
+    position: absolute;
+    bottom: 30%;
+    left: 15vw;
+
+}
+
+.bars-title-container {
+    border-top: 2px solid var(--dark-text-color);
+    max-width: 63%;
+    position: relative;
+}
+
+/* ------------ Main Zone ends ------------ */
+
+/* ------------ Footer Zone ------------ */
+
+footer {
+    color: #fff;
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    min-width: 100dvw;
+}
+
+/* ------------ Footer Zone ends ------------ */
+
+/* ------------ Media Queries zone ------------ */
+
+@media screen and (max-width:800px) {
+    .Tetos__logo1 {
+        width: 50px;
+        margin: 0;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .list__container {
+        margin-top: 50px;
+    }
+
+    .sidebar__item span {
+        padding: 20px;
+    }
+
+        .sidebar__link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .barra_de_busqueda{
+        left: 24%;
+    }
+
+    footer {
+        1
+    }
+
+    fieldset {
+        display: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+}
